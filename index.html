@@ -12,46 +12,47 @@
   </head>
   <body class="p-3 m-0 border-0 bd-example m-0 border-0">
     
-    <nav class="navbar navbar-expand-lg navbar-light p-3 d-flex" id="nav-container">
-      <a class="navbar-brand d-flex align-items-start gap-3" href="#">
-        <img src="logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-top mr-5 ml-3">
-        <strong class="Logo-text fs-5 fw-bold">Xpresship</strong>
-      </a>
-      
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse d-flex justify-content-end gap-4" id="navbarNav">
-        <ul class="navbar-nav ml-auto text-light d-flex justify-content-end gap-4">
-          <li class="nav-item">
-            <a class="nav-link active fw-semibold" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-semibold" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-semibold" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-semibold" href="#">Blogs</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-semibold" href="#">Contact</a>
-          </li>
-        </ul>
-        <a class="btn text-light bg-dark  ml-3" id="nav-cta" href="#">Order Moving</a>
-      </div>
-    </nav>
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-scroll fixed-top shadow-1 p-3">
+  <div class="container">
+    <div class="navbar-brand d-flex align-items-center gap-3"  href="#!">
+      <img src="logo.png" width="40px" height="40px">
+      <h1 class="text-dark fs-3 fw-bold m-0">Xpresship</h1>
+    </div>
+    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+      data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <!-- <i class="fas fa-bars"></i> -->
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto gap-4">
+        <li class="nav-item">
+          <a class="nav-link active fw-semibold" href="#!">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-semibold" href="#!">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-semibold" href="#!">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-semibold" href="#!">Blog</a>
+        </li>
+        <button type="button" class="btn btn-dark ms-3" >Order moving</button>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Navbar -->
 
     <!-- Hero Section -->
-<section class="hero-section mt-2">
+<section class="hero-section">
   <div class="container">
-    <div class="row align-items-center">
+    <div class="row align-items-center" id="hero-body">
       <div class="col-md-6">
-        <h5>Provide best moving service</h5>
-        <h1 class="fs-1 fw-bold">We make moving<br>Cheap & Safe</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur condimentum sollicitudin lacinia.</p>
+        <h5 class="text-warning fw-regular">Provide best moving service</h5>
+        <h1 class=" fw-semibold display-4">We make moving<br>Cheap & Safe</h1>
+        <p class="display-6 fs-6">Your trusted partner in global logistics. We offer reliable, on-time delivery solutions with a customer-first approach, cutting-edge technology, and a commitment to sustainability.</p>
         <button class="btn btn-yellow btn-lg border mw-100" type="button">Let's start moving</button>
       </div>
       <div class="col-md-6 text-center">
@@ -66,11 +67,11 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <h6>About us</h6>
-        <h2 class="fs-1 fw-bold mb-3">The best moving company<br>in the country</h2>
+        <h6 class="text-warning">About us</h6>
+        <h2 class="display-4 fw-semibold mb-3">The best moving company<br>in the country</h2>
         <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur condimentum sollicitudin lacinia. Donec a turpis elementum, hendrerit mi et, varius risus.</p>
         
-        <div class="row mt-4">
+        <div class="row mt-4 g-2">
           <div class="col-md-4">
             <div class="feature-icon" style="background-color: #fff; box-shadow: 10px 10px 73px -19px rgba(0,0,0,0.45); height: 116px;">
               <img src="truck-outline.png" alt="Logo" width="30" height="30" class="d-inline-block align-top mb-2 mt-2">
@@ -112,7 +113,7 @@
             <div class="form-group">
               <textarea class="form-control" rows="3" placeholder="Your message"></textarea>
             </div>
-            <button type="submit" class="btn btn-dark btn-block">Get started</button>
+            <button type="submit" id="form-btn" class="btn btn-dark btn-block">Get started</button>
           </form>
         </div>
       </div>
@@ -124,8 +125,8 @@
   <div class="fluid-container" style="height: 100%; width: 100%;">  
    <div class="row gap-2 p-4">  
     <div class="col-lg-12 text-center pt-4">
-      <h2 class="section-heading fs-1 text-light">Our Services</h2>  
-      <h3 class="section-subheading fs-5 text-light text-decoration-underline ">Services we provide</h3>  
+      <h2 class="section-subheading text-warning">Our Services</h2>  
+      <h1 class="section-heading text-light display-4 ">Services we provide</h1>  
     </div>  
    </div>  
    <div class="d-grid gap-3">
@@ -254,14 +255,14 @@
 
 
 <!-- Advertisement Section -->  
-<section id="advertisement" class="advertisement">  
+<section id="advertisement" class="advertisement mt-4">  
   <div class="container">  
-  <div class="row p-4">  
+  <div class="row p-3" >  
     <div class="col-lg-12 text-center p-4">
       <h2 class="section-subheading text-warning ">Ready 24 hours</h2>  
       <h3 class="section-heading fs-1 fw-bold text-light">Movers 24 hours a day a week</h3> 
       <p class="text-light fs-6 mt-2">With Xpresship, you gain a logistics partner that delivers beyond the destination. From local to global, we support your growth every step of the way.</p>
-      <a href="#" class="btn btn-warning">Contact us</a>
+      <button type="submit" id="form-btn2" class="btn btn-dark">Contact us</button>
     </div>  
   </div>  
   </div>  
@@ -354,7 +355,7 @@
       <h3 class="section-subheading text-muted">Latest blogs</h3>  
     </div>  
   </div>  
-   <div class="row">  
+   <div class="row g-4">  
     <div class="col-md-4">  
     <div class="card">  
        <img src="blog1.png" alt="Blog Image"  class="card-img-top">  
@@ -390,7 +391,7 @@
 </section>
 
 <!-- Promotional Banner Section -->  
-<section id="promotional-banner" class="promotional-banner fluid-container">  
+<section id="promotional-banner" class="promotional-banner fluid-container rounded">  
   <div class="container">  
    <div class="row">  
     <div class="col-lg-12 text-start">  
@@ -419,7 +420,7 @@ style="background-color: #182A38"
    >
 <!-- Left -->
 <div class="me-5">
-<span class="fs-5 fw-semibold">Get connected with us on social networks:</span>
+<span class="fs-5 fw-semibold ">Get connected with us on social networks:</span>
 </div>
 <!-- Left -->
 
@@ -456,7 +457,7 @@ style="background-color: #182A38"
 <!-- Grid column -->
 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
   <!-- Content -->
-  <div class="d-flex gap-4">
+  <div class="d-flex gap-4 justify-content-center align-items-center">
     <img src="logow.png" alt="">
     <h6 class="display-6 text-uppercase fw-bold">Xpresship</h6>
   </div>
