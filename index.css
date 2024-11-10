@@ -1,3 +1,37 @@
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+  color: #262626;
+}
+
+/* Color of the navbar BEFORE scroll */
+.navbar-scroll {
+  background-color: #fff;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+  color: #262626;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scrolled {
+  background-color: #fff;
+}
+
+/* An optional height of the navbar AFTER scroll */
+.navbar.navbar-scroll.navbar-scrolled {
+  padding-top: auto;
+  padding-bottom: auto;
+}
+.navbar-brand {
+  font-size: unset;
+  height: 3.5rem;
+}
+
 #nav-container{
     background: #F6F6F6;
 }
@@ -14,6 +48,7 @@
 .d-inline-block align-top mr-5{
     margin-right: 10px;
 }
+
 .hero-section {
     background-image: url(./wave-bg.png);
     background-repeat: no-repeat;
@@ -23,6 +58,7 @@
     color: white;
     padding: 50px 0;
     border-radius: 20px;
+    margin-top: 80px;
   }
   .hero-section .btn-yellow {
     background-color: #ffc107;
@@ -194,5 +230,33 @@
     }
     #card-lines{
         padding-top: 10px;
+    }
+    #hero-body button{
+        width: 100%;
+    }
+    #hero-body{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .hero-section{
+        padding: 20px 10px 20px 10px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #form-btn{
+        height: 60px;
+        width: 100%;
+        background: #262626;
+        color: #fff;
+    }
+    #form-btn2{
+        height: 60px;
+        width: 100%;
+        background: #FFC107;
+        color: #fff;
+    }
+    .promotional-banner{
+        margin: 0px;
+        border-radius: 10px;
     }
 }
