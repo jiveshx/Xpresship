@@ -552,6 +552,19 @@ style="background-color: rgba(0, 0, 0, 0.2)"
 <!-- Footer -->
 
 
+<script>
+  // JavaScript to collapse the navbar when clicking outside
+  document.addEventListener('click', function(event) {
+    const navbar = document.getElementById('navbarSupportedContent');
+    const isClickInside = navbar.contains(event.target) || event.target.closest('.navbar-toggler');
+
+    if (!isClickInside && navbar.classList.contains('show')) {
+      const collapse = new bootstrap.Collapse(navbar);
+      collapse.hide();
+    }
+  });
+</script>
+
 
  
 
