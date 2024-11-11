@@ -132,7 +132,7 @@
     background-repeat: no-repeat;
     background-position: center;
     margin-top: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 .latest-blogs {  
     background-color: #f7f7f7;  
@@ -229,7 +229,7 @@
         margin: 0px;
     }
     #card-lines{
-        padding-top: 10px;
+        margin-top: 20px;
     }
     #hero-body button{
         width: 100%;
@@ -258,5 +258,21 @@
     .promotional-banner{
         margin: 0px;
         border-radius: 10px;
+    }
+    #about-cont{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .promotional-banner{
+      display: flex;
+      height: 100%;
+      padding: 20px 10px 20px 10px;
+      background-repeat: repeat;
+      margin-bottom: 0px;
+      margin-top: 20px;
+      border-radius: 20px 20px 0px 0px;
+    }
+    #call-btn{
+      width: 100%;
     }
 }
