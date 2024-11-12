@@ -310,6 +310,7 @@
   margin-top: 80px;
   padding: 60px;
   padding-top: 120px;
+  border-radius: 20px;
 }
   
 @media (max-width: 575.98px) {
@@ -377,5 +378,11 @@
     .get-in-touch .title{
       font-size: 42px;
       margin-bottom: 15px;
+    }
+    #page-intro-bg{
+      padding-left: 20px;
+      padding-right: 20px;
+      /* gap: 20px; */
+      padding-top: 80px;
     }
 }
